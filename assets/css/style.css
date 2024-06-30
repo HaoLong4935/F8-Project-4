@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --bg-color: #fff;
+    --primary-color: #152427;
+    --secondary-color: #143c3c;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    min-width: 173px;
+    height: 57px;
+    border-radius: 50px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: 500;
+    border: none;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 0 10px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar */
+.header {
+    background-color: var(--bg-color);
+}
+
+.header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.header-top {
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+}
+
+
+
+.header-top::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg,
+            #fff 0%,
+            #dddcdc 51.09%,
+            rgba(212, 212, 212, 0) 99.68%);
+}
+
+.navbar {
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item a {
+    padding: 8px 19px;
+    font-size: 1.8rem;
+    color: #575d5e;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.sign-up-btn {
+    margin-left: 69px;
+}
+
+.nav-link.active {
+    color: #152427;
+}
+
+.nav-link.active::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    width: 16px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+/* Hero section */
+.hero {
+    margin-top: calc(60px + 50px);
+}
+
+.hero-info {
+    width: 33%;
+}
+
+.hero-heading {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #152427;
+}
+
+.hero-desc {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #575D5E;
+}
+
+.hero-row {
+    margin-top: 40px;
+}
+
+.hero-cta {
+    margin-right: 36px;
+}
+
+.hero__video {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.hero__video:hover .hero__play-border {
+    transform: rotate(135deg);
+}
+
+.hero__video:hover .hero__play-text {
+    opacity: 0.8;
+}
+
+.hero__play-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    border: 4px solid;
+    border-radius: 50%;
+    border-color: var(--secondary-color) transparent transparent var(--secondary-color);
+}
+
+/* Css cho cục chứa cái img tam giác */
+.hero__play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    background-color: #83a17d;
+}
+
+/* Css cho chữ watch video */
+.hero__play-text {
+    margin-left: 15px;
+    color: #152427;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
