@@ -21,6 +21,12 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/manifest.json">
+    <!-- Embedede fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -77,29 +83,311 @@
     <!-- Hero section -->
     <div class="container">
         <div class="hero">
-            <section class="hero-info">
-                <h1 class="hero-heading">
-                    We’re a creative design agency.
-                </h1>
-                <p class="hero-desc">
-                    A brilliant, modular agency template for startup's
-                    build yours toady.
-                </p>
-            </section>
+            <div class="hero-left-content">
+                <section class="hero-info">
+                    <h1 class="hero-heading">
+                        We’re a creative design agency.
+                    </h1>
+                    <p class="hero-desc">
+                        A brilliant, modular agency template for startup's
+                        build yours toady.
+                    </p>
+                </section>
 
-            <div class="hero-row row">
-                <button class="btn hero-cta">Get in touch</button>
-                <button class="row hero__video">
-                    <div class="hero__play-border">
-                        <div class="hero__play-btn">
-                            <img src="./assets/icons/play.svg" alt="" />
+                <div class="hero-row row">
+                    <button class="btn hero-cta">Get in touch</button>
+                    <button class="row hero__video">
+                        <div class="hero__play-border">
+                            <div class="hero__play-btn">
+                                <img src="./assets/icons/play.svg" alt="" />
+                            </div>
                         </div>
-                    </div>
-                    <span class="hero__play-text">Watch Video</span>
-                </button>
+                        <span class="hero__play-text">Watch Video</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero__images">
+                <div class="hero__eclipse"></div>
+                <figure class="img-block">
+                    <img
+                        src="./assets/img/hero-img-1.jpg"
+                        alt=""
+                        class="img-block__item" />
+                </figure>
+                <figure class="img-block">
+                    <img
+                        src="./assets/img/hero-img-2.jpg"
+                        alt=""
+                        class="img-block__item" />
+                </figure>
+                <figure class="img-block">
+                    <img
+                        src="./assets/img/hero-img-3.jpg"
+                        alt=""
+                        class="img-block__item" />
+                </figure>
+            </div>
+
+            <div class="icon-first">
+                <img
+                    src="./assets/icons/union.svg"
+                    alt=""
+                    class="icon-first__head" />
+                <img
+                    src="./assets/icons/union-body.svg"
+                    alt=""
+                    class="icon-first__body" />
+            </div>
+            <div class="icon-second">
+                <img
+                    src="./assets/icons/union.svg"
+                    alt=""
+                    class="icon-second__head" />
+                <img
+                    src="./assets/icons/union-body.svg"
+                    alt=""
+                    class="icon-second__body" />
+            </div>
+        </div>
+
+        <!-- Sponsors -->
+        <div class="sponsors">
+            <div class="sponsors-list">
+                <div class="sponsor-item">
+                    <span class="google-logo uppercase">Google</span>
+                </div>
+                <div class="sponsor-item">
+                    <img
+                        src="./assets/icons/slack-logo.svg"
+                        alt=""
+                        class="" />
+                    <span class="slack-logo uppercase">slack</span>
+                </div>
+                <div class="sponsor-item">
+                    <img
+                        src="./assets/icons/agworld-logo.svg"
+                        alt=""
+                        class="" />
+                    <span class="agword-logo uppercase">Agword</span>
+                </div>
+                <div class="sponsor-item">
+                    <span class="riotino-logo uppercase">RioTino</span>
+                </div>
+                <div class="sponsor-item">
+                    <img
+                        src="./assets/icons/heroku-logo.svg"
+                        alt=""
+                        class="" />
+                    <span class="uppercase">Heroku</span>
+                </div>
             </div>
         </div>
     </div>
+
+    <section class="service">
+        <div class="container">
+            <div class="service-top">
+                <div class="title">OUR SERVICES</div>
+                <div class="row">
+                    <div class="section-heading service__heading">
+                        We offer a wide range of design services
+                        <span
+                            class="line">
+                        </span>
+                    </div>
+                    <div class="row service__action">
+                        <button class="service__btn">
+                            <svg
+                                width="22"
+                                height="12"
+                                viewBox="0 0 22 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 6.29412H21M21 6.29412L15.7059 1M21 6.29412L15.7059 11"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="service__btn">
+                            <svg
+                                width="22"
+                                height="12"
+                                viewBox="0 0 22 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 6.29412H21M21 6.29412L15.7059 1M21 6.29412L15.7059 11"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service card -->
+            <div class="service-list">
+                <!-- Item 1 -->
+                <article class="service-item">
+                    <img
+                        src="./assets/img/service-1.jpg"
+                        alt=""
+                        class="service-item__thumb" />
+                    <h3 class="service-item__title">Branding</h3>
+                    <p class="desc desc-level-1 service-item__desc">
+                        Create beautiful Agency website with Boluethat
+                        converts more visitors than any website.
+                    </p>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="service-item">
+                    <img
+                        src="./assets/img/service-2.jpg"
+                        alt=""
+                        class="service-item__thumb" />
+                    <h3 class="service-item__title">Web Design</h3>
+                    <p class="desc desc-level-1 service-item__desc">
+                        Create beautiful Agency website with Boluethat
+                        converts more visitors than any website.
+                    </p>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="service-item">
+                    <img
+                        src="./assets/img/service-3.jpg"
+                        alt=""
+                        class="service-item__thumb" />
+                    <h3 class="service-item__title">Graphic Design</h3>
+                    <p class="desc desc-level-1 service-item__desc">
+                        Create beautiful Agency website with Boluethat
+                        converts more visitors than any website.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="row about-row">
+                <div class="about__images">
+                    <figure class="about__img-block">
+                        <img
+                            src="./assets/img/hero-img-1.jpg"
+                            alt=""
+                            class="about__img-item" />
+                    </figure>
+                    <figure class="about__img-block">
+                        <img
+                            src="./assets/img/hero-img-2.jpg"
+                            alt=""
+                            class="about__img-item" />
+                    </figure>
+                    <div class="about__icon">
+                        <img
+                            src="./assets/icons/union.svg"
+                            alt=""
+                            class="about__icon-head" />
+                        <img
+                            src="./assets/icons/union-body.svg"
+                            alt=""
+                            class="about__icon-body" />
+                    </div>
+                    <div class="card">
+                        <div class="card_info">
+                            <h3 class="card__title">All Desingners</h3>
+                            <p class="card__desc">Total Balance</p>
+                            <span class="card__percent">40%</span>
+                            <div class="card__line">
+                                <div class="card__line--green"></div>
+                            </div>
+                            <p class="card__loading">Loading...</p>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="11"
+                                height="11"
+                                viewBox="0 0 11 11"
+                                fill="none">
+                                <circle
+                                    cx="5.5"
+                                    cy="5.5"
+                                    r="5.5"
+                                    fill="#EAEAEA" />
+                                <circle
+                                    cx="5.5"
+                                    cy="5.5"
+                                    r="2.5"
+                                    fill="#143C3C" />
+                            </svg>
+                            <div class="row card__row">
+                                <span class="card__team">Teams:</span>
+                                <div class="row">
+                                    <img
+                                        src="./assets/img/avt-1.jpg"
+                                        alt=""
+                                        class="card__avt" />
+                                    <img
+                                        src="./assets/img/avt-2.jpg"
+                                        alt=""
+                                        class="card__avt" />
+                                    <img
+                                        src="./assets/img/avt-3.jpg"
+                                        alt=""
+                                        class="card__avt" />
+                                    <img
+                                        src="./assets/img/avt-4.jpg"
+                                        alt=""
+                                        class="card__avt" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="about__info">
+                    <div class="title about__title">ABOUT US</div>
+                    <h1 class="section-heading about__heading">
+                        We are an extention of your creative team
+                    </h1>
+                    <p class="desc desc-level-2 about__desc">
+                        At the start of every project, we cusomizea
+                        detailed project plan together with you set
+                        exectationns ensure alighment and define key
+                        milestones and deiverbles.
+                    </p>
+                    <div class="row about__row">
+                        <span class="about__percent">48%</span>
+                        <p
+                            class="desc desc-level-1"
+                            style="width: 364px">
+                            Are you strive for two things in design
+                            simplicity and clarity. Great design is born
+                            of those two things
+                        </p>
+                    </div>
+
+                    <div class="row about__row">
+                        <span class="about__percent">26%</span>
+                        <p
+                            class="desc desc-level-1"
+                            style="width: 364px">
+                            Are you strive for two things in design
+                            simplicity and clarity. Great design is born
+                            of those two things
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
 
 
     <main style="height: 5000px;">
